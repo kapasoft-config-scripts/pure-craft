@@ -5,12 +5,15 @@
 </template>
 
 <script>
-import HomeDefault from './components/HomePages/HomeDefault.vue'
+import HomeDefault from './components/pages/HomeDefault.vue';
+// import LoaderBlock from './components/blocks/LoaderBlock.vue';
+
 
 export default {
   name: 'App',
   components: {
-    HomeDefault
+    HomeDefault,
+    // LoaderBlock
   }
 }
 </script>
