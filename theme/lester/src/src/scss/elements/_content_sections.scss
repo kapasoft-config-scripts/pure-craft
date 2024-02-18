@@ -1,0 +1,146 @@
+// Content section type 1
+.content-section-type-1 {
+  .content-wrapper {
+	.content {
+	  border-bottom: 1px solid var(--default-border);
+	  margin-bottom: 80px;
+	  padding-bottom: 80px;
+	  @media(max-width: $xl) {
+		margin-bottom: 40px;
+		padding-bottom: 50px;
+	  }
+	  @media(max-width: $lg) {
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+	  }
+	  
+	  .video-wrapper {
+		position: relative;
+		@media(max-width: $xl) {
+		  margin-bottom: 10px;
+		}
+	  }
+	}
+  }
+  
+  .content-footer {
+	.service {
+	  .icon-wrapper {
+		i {
+		  color: var(--primary-color);
+		  font-size: 48px;
+		  margin-right: 20px;
+		  @media(max-width: $lg) {
+			font-size: 36px;
+			margin-right: 15px;
+		  }
+		}
+	  }
+	  
+	  .description {
+		h6 {
+		  font-size: 15px;
+		  font-weight: 600;
+		  line-height: 1;
+		  margin-bottom: 5px;
+		}
+	  }
+	}
+	
+	.service:not(:last-child) {
+	  @media(max-width: $lg) {
+		margin-bottom: 35px;
+	  }
+	}
+  }
+}
+
+// Content section type 2
+.content-section-type-2 {
+  background-repeat: repeat;
+  border-bottom: 1px solid var(--default-border);
+  
+  .flip-container {
+	h5 {
+	  color: var(--white-color);
+	  margin-bottom: 5px;
+	}
+  }
+  
+  .services-wrapper {
+	.service-wrapper {
+	  .icon-wrapper {
+		border: 1px solid var(--default-border);
+		border-radius: 5px;
+		margin-right: 30px;
+		max-height: 100px;
+		max-width: 100px;
+		min-height: 100px;
+		min-width: 100px;
+		overflow: hidden;
+		padding: 25px;
+		position: relative;
+		@media(max-width: $xl) {
+		  margin-right: 20px;
+		}
+		@media(max-width: $sm) {
+		  margin-right: 15px;
+		}
+		
+		i {
+		  color: var(--primary-color);
+		  font-size: 30px;
+		  position: relative;
+		  transition: all .3s ease-in-out;
+		  z-index: 10;
+		}
+	  }
+	  
+	  .icon-wrapper:after {
+		background-color: var(--primary-color);
+		border-radius: 5px;
+		content: ' ';
+		display: block;
+		height: 100%;
+		left: 0;
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		transform: scale(0.5);
+		transition: all .3s ease-in-out;
+		width: 100%;
+		z-index: 1;
+	  }
+	  
+	  .content-wrapper {
+		@media(max-width: $xl) {
+		  order: 2;
+		}
+		
+		h6 {
+		  margin-bottom: 5px;
+		}
+	  }
+	}
+	
+	.service-wrapper:not(:last-child) {
+	  margin-bottom: 20px;
+	  @media(max-width: $sm) {
+		margin-bottom: 15px;
+	  }
+	}
+	
+	.service-wrapper:hover {
+	  .icon-wrapper {
+		i {
+		  color: $white;
+		}
+	  }
+	  
+	  .icon-wrapper:after {
+		opacity: 1;
+		transform: scale(1);
+	  }
+	}
+  }
+}

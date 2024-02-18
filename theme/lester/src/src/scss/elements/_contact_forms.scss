@@ -1,0 +1,121 @@
+.contact-form-white {
+  input, textarea {
+	background-color: transparent;
+	border: 2px solid var(--default-border);
+	color: var(--black-color);
+	margin-bottom: 15px;
+	opacity: 0.8;
+	padding: 12px 17px;
+	width: 100%;
+  }
+  
+  .input-small {
+	padding: 7px 17px;
+  }
+  
+  .input-error {
+	border: 2px solid $danger;
+  }
+  
+  .input-success {
+	border: 2px solid $success;
+  }
+  
+  .form-select {
+	margin-bottom: 15px;
+	width: 100%;
+	
+	option {
+	  padding: 5px 10px;
+	}
+  }
+  
+  .input-disabled {
+	background-color: var(--default-border);
+	border: 2px solid var(--default-border);
+	cursor: not-allowed;
+  }
+  
+  textarea {
+	min-height: 200px;
+	resize: none;
+  }
+  
+  button {
+	margin-top: 15px;
+  }
+}
+
+// Contact form type 1
+.contact-form-type-1 {
+  .faq-contact-form-wrapper {
+	.faq-contact-form {
+	  input, textarea {
+		background-color: transparent;
+		border: none;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+		color: $white;
+		padding: 15px 0;
+		width: 100%;
+	  }
+	  
+	  .input-row {
+		@media(max-width: $md) {
+		  flex-direction: column;
+		}
+	  }
+	  
+	  .first-div {
+		margin-right: 20px;
+		@media(max-width: $md) {
+		  margin-right: 0;
+		}
+	  }
+	  
+	  .last-div {
+		margin-left: 20px;
+		@media(max-width: $md) {
+		  margin-left: 0;
+		}
+	  }
+	  
+	  .form-div {
+		margin-bottom: 40px;
+		max-height: 250px;
+		position: relative;
+		width: 100%;
+		@media(max-width: $md) {
+		  margin-bottom: 20px;
+		}
+	  }
+	  
+	  .form-div:after {
+		background-color: $white;
+		bottom: 0;
+		content: ' ';
+		display: block;
+		height: 1px;
+		position: absolute;
+		transition: all .3s ease-in-out;
+		width: 0;
+	  }
+	  
+	  .form-div-focus:after {
+		width: 100%;
+	  }
+	  
+	  ::placeholder {
+		color: rgba($white, 0.5);
+	  }
+	  
+	  textarea {
+		height: 250px;
+		resize: none;
+	  }
+	  
+	  button {
+		margin-top: 50px;
+	  }
+	}
+  }
+}

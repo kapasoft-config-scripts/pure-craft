@@ -1,0 +1,243 @@
+// Icon boxes type 1
+.icon-boxes-type-1 {
+  .icon-box-wrapper {
+	margin-bottom: 30px;
+	@media(max-width: $md) {
+	  margin-left: auto;
+	  margin-right: auto;
+	  max-width: 400px;
+	}
+	
+	i {
+	  color: var(--primary-color);
+	  font-size: 42px;
+	  margin-bottom: 20px;
+	}
+	
+	h6 {
+	  font-weight: 600;
+	  margin-bottom: 5px;
+	}
+  }
+  
+  .right-side {
+	align-items: flex-end;
+	@media(max-width: $md) {
+	  align-items: center;
+	}
+	
+	h6 {
+	  text-align: right;
+	  @media(max-width: $md) {
+		text-align: center;
+	  }
+	}
+	
+	p {
+	  text-align: right;
+	  @media(max-width: $md) {
+		text-align: center;
+	  }
+	}
+  }
+  
+  .center-side {
+	align-items: center;
+	
+	h6 {
+	  text-align: center;
+	}
+	
+	p {
+	  text-align: center;
+	}
+  }
+  
+  .left-side {
+	align-items: flex-start;
+	@media(max-width: $md) {
+	  align-items: center;
+	}
+	
+	h6 {
+	  text-align: left;
+	  @media(max-width: $md) {
+		text-align: center;
+	  }
+	}
+	
+	p {
+	  text-align: left;
+	  @media(max-width: $md) {
+		text-align: center;
+	  }
+	}
+  }
+}
+
+// Icon boxes type 2
+.icon-boxes-type-2 {
+  .icon-box-wrapper {
+	margin-bottom: 30px;
+	transform-style: preserve-3d;
+	@media(max-width: $md) {
+	  margin-left: auto;
+	  margin-right: auto;
+	  max-width: 400px;
+	}
+	
+	.icon-box {
+	  background-color: $white;
+	  border-radius: 5px;
+	  box-shadow: 0 4px 8px var(--box-shadow-boxes);
+	  padding: 60px 40px;
+	  @media(max-width: $xl) {
+		padding: 50px 30px;
+	  }
+	  @media(max-width: $xl) {
+		padding: 30px;
+	  }
+	  @media(max-width: $md) {
+		padding: 30px 15px;
+	  }
+	}
+	
+	i {
+	  font-size: 36px;
+	  margin-bottom: 35px;
+	  text-align: center;
+	  transform: translateZ(30px);
+	  @media(max-width: $xl) {
+		margin-bottom: 20px;
+	  }
+	}
+	
+	h5 {
+	  color: var(--primary-color);
+	  margin-bottom: 20px;
+	  text-align: center;
+	  transform: translateZ(25px);
+	  @media(max-width: $xl) {
+		margin-bottom: 10px;
+	  }
+	  @media(max-width: $lg) {
+		margin-bottom: 5px;
+	  }
+	}
+	
+	p {
+	  text-align: center;
+	  transform: translateZ(35px);
+	}
+  }
+}
+
+// Icon boxes type 3
+.icon-boxes-type-3 {
+  .icon-box-wrapper {
+	.icon-box {
+	  background-color: var(--white-section);
+	  border: 2px solid var(--default-border);
+	  border-radius: 5px;
+	  margin-bottom: 30px;
+	  padding: 50px 40px;
+	  @media(max-width: $xl) {
+		padding: 30px 15px;
+	  }
+	  @media(max-width: $md) {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 330px;
+	  }
+	  
+	  .icon {
+		color: var(--black-color);
+		font-size: 48px;
+		margin-bottom: 30px;
+		text-align: center;
+		@media(max-width: $xl) {
+		  font-size: 42px;
+		}
+	  }
+	  
+	  .icon-title {
+		font-weight: 600;
+		letter-spacing: 0.5px;
+		line-height: 1;
+		margin-bottom: 10px;
+		text-align: center;
+		@media(max-width: $xl) {
+		  font-size: 20px;
+		  margin-bottom: 5px;
+		}
+	  }
+	  
+	  .icon-text {
+		text-align: center;
+	  }
+	}
+	
+	.active {
+	  box-shadow: 0 3px 7px var(--box-shadow-boxes);
+	  transform: translateY(-7px);
+	  @media(max-width: $lg) {
+		box-shadow: none;
+		transform: none;
+	  }
+	  
+	  .icon {
+		color: var(--primary-color);
+		@media(max-width: $lg) {
+		  color: var(--black-color);
+		}
+	  }
+	  
+	  .icon-title {
+		color: var(--primary-color);
+		@media(max-width: $lg) {
+		  color: var(--black-color);
+		}
+	  }
+	  
+	  .icon-text {
+		color: var(--primary-color);
+		@media(max-width: $lg) {
+		  color: var(--black-color);
+		}
+	  }
+	}
+  }
+}
+
+// Icon boxes type 4
+.icon-boxes-type-4 {
+  .icon-box-wrapper {
+	background-size: cover;
+	
+	.icon-box {
+	  color: $white;
+	  margin-left: auto;
+	  margin-right: auto;
+	  max-width: 300px;
+	  padding: 0 15px;
+	  position: relative;
+	  text-align: center;
+	  z-index: 10;
+	  
+	  .icon-title {
+		color: var(--white-color);
+		font-weight: 600;
+		margin-bottom: 5px;
+	  }
+	  
+	  .icon {
+		font-size: 36px;
+		margin-bottom: 25px;
+	  }
+	  
+	  .icon-text {
+		color: $white;
+	  }
+	}
+  }
+}

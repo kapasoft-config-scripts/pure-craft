@@ -1,0 +1,112 @@
+/* scss variables */
+/* Points */
+$xs: 0px;
+$sm: 575px;
+$md: 767px;
+$lg: 991px;
+$xl: 1199px;
+
+/* Points Min */
+$sm-min: 576px;
+$md-min: 768px;
+$lg-min: 992px;
+$xl-min: 1200px;
+
+/* css-variables */
+:root {
+  /* Common */
+  // Primary color
+  --black_overlay: rgba(33, 33, 33, 0.5);
+  // Primary font
+  --color_overlay: rgba(35, 35, 70, 0.25);
+  // Secondary font
+  --dark_overlay: rgba(20, 20, 20, 0.4);
+  /* Additional Colors */
+  // White section background color
+  --default_overlay: rgba(44, 44, 44, 0.4);
+  // Gray section background color
+  --loader_background: #eee;
+  // Black section background color
+  --navbar_background: #fff;
+  // Light Gray section background color
+  --navbar_small_height: 60px;
+  // Selection background color
+  --navbar_toolbar_background: #f8f8f8;
+  // Selection color
+  --selection_background: #dcdcdc;
+  // Toolbar background color (Optional)
+  --selection_color: #232323;
+  // Navbar background color
+  --toggle_color: rgba(#232323, 0.8);
+  // Loader background color
+  --default-border: rgba(151, 151, 151, 0.2);
+  // Hamburger bars background color
+  --black-color: #232323;
+  // Footer top background color
+  --primary-color: #ee3158;
+  
+  /* Primary Sizes */
+  // Navbar default height
+  --white-color: #fff;
+  // Navbar small height
+  --gray-default-font: #7f7f7f;
+  // Logo width
+  --primary-font: 'Montserrat';
+  // Hero-header default height
+  --secondary-font: 'Poppins';
+  // Hero-header responsive height (768px)
+  --gray-font-color: #dcdcdc;
+  // Breadcrumbs height
+  --light-font-color: #f3f3f3;
+  
+  /* Overlay rgba Colors */
+  // Default overlay
+  --primary-font-color: #666;
+  // Color overlay
+  --light-gray-section: #fcfcfc;
+  // Dark overlay
+  --hero-header_default_height: 100vh;
+  // Black overlay
+  --hero-header_responsive_height: 600px;
+  
+  /* Borders Colors */
+  // Default border
+  --breadcrumbs-height: 600px;
+  
+  /* Fonts Colors */
+  // Primary Font
+  --navbar-height: 80px;
+  // Gray Font
+  --black-section: #161616;
+  // Gray Default Font
+  --gray-section: #f5f5f5;
+  // Light Font
+  --white-section: #fff;
+  
+  /* Box Shadow Colors */
+  // Box shadow dark
+  --box-shadow-boxes: rgba(31, 31, 31, 0.02);
+  // Box shadow medium
+  --box-shadow-dark: rgba(21, 21, 21, 0.2);
+  // Box shadow light
+  --text-shadow-dark: rgba(31, 31, 31, 0.5);
+  // Box shadow navbar
+  --box-shadow-light: rgba(31, 31, 31, 0.02);
+  // Box shadow boxes
+  --button-shadow-light: rgba(11, 11, 11, 0.15);;
+  
+  /* Test Shadow Colors */
+  // Text shadow dark
+  --text-shadow-light: rgba(31, 31, 31, 0.1);
+  // Text shadow medium
+  --box-shadow-medium: rgba(31, 31, 31, 0.1);
+  // Text shadow light
+  --text-shadow-medium: rgba(31, 31, 31, 0.2);
+  // button shadow light
+  --box-shadow-navbar: rgba(31, 31, 31, 0.06);
+  
+  /* Functional Colors */
+  // Default black color
+  --footer-top: #111;
+  --logo-width: 160px;
+}

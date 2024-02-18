@@ -1,0 +1,242 @@
+// Counters type 1
+.counters-section-type-1 {
+  background-size: cover;
+  @media(max-width: $lg) {
+	border-bottom: none;
+  }
+  
+  .counters-wrapper {
+	justify-content: center;
+	
+	.counter-box {
+	  border-bottom: 1px solid var(--default-border);
+	  padding: 100px 20px;
+	  @media(max-width: $xl) {
+		padding: 60px 20px;
+	  }
+	  @media(max-width: $lg) {
+		padding: 80px 20px;
+	  }
+	  @media(max-width: $sm) {
+		padding: 40px 10px;
+	  }
+	  
+	  .prop-obj {
+		color: var(--heading-color);
+		font-family: var(--secondary-font);
+		font-size: 70px;
+		font-weight: 700;
+		letter-spacing: 1px;
+		line-height: 1;
+		margin-bottom: 8px;
+		opacity: 0.3;
+		transition: all .2s ease-in-out;
+		@media(max-width: $lg) {
+		  font-size: 60px;
+		}
+		@media(max-width: $md) {
+		  font-size: 48px;
+		}
+		@media(max-width: $sm) {
+		  font-size: 42px;
+		}
+	  }
+	  
+	  .title-counter {
+		color: var(--heading-color);
+		font-family: var(--secondary-font);
+		font-size: 13px;
+		font-weight: 700;
+		letter-spacing: 0.5px;
+		opacity: 0.4;
+		text-align: center;
+		text-transform: uppercase;
+		transition: all .3s ease-in-out;
+		@media(max-width: $md) {
+		  margin-bottom: 5px;
+		}
+		@media(max-width: $sm) {
+		  font-size: 12px;
+		  letter-spacing: normal;
+		}
+	  }
+	}
+	
+	.counter-box:hover {
+	  .prop-obj {
+		color: var(--primary-color);
+		opacity: 1;
+	  }
+	  
+	  .title-counter {
+		color: var(--primary-color);
+		opacity: 1;
+	  }
+	}
+	
+	.counter-box:not(:last-child) {
+	  border-right: 1px solid var(--default-border);
+	}
+  }
+}
+
+// Counters type 2
+.counters-section-type-2 {
+  .counters-wrapper {
+	justify-content: center;
+	
+	.counter-box {
+	  padding: 120px 20px;
+	  position: relative;
+	  @media(max-width: $lg) {
+		padding: 80px 20px;
+	  }
+	  @media(max-width: $md) {
+		padding: 50px 15px;
+	  }
+	  @media(max-width: $sm) {
+		border-bottom: 1px solid var(--default-border);
+		border-top: none;
+		padding: 30px 5px;
+	  }
+	  
+	  .title-counter {
+		color: rgba($black, 0.3);
+		font-family: var(--secondary-font);
+		font-size: 13px;
+		font-weight: 700;
+		letter-spacing: 0.5px;
+		margin-bottom: 15px;
+		text-align: center;
+		text-transform: uppercase;
+		transition: all .3s ease-in-out;
+		@media(max-width: $md) {
+		  margin-bottom: 5px;
+		}
+		@media(max-width: $sm) {
+		  font-size: 12px;
+		  letter-spacing: normal;
+		}
+	  }
+	  
+	  .prop-obj {
+		color: rgba($black, 0.3);
+		font-family: var(--secondary-font);
+		font-size: 80px;
+		font-weight: 700;
+		letter-spacing: 2px;
+		line-height: 1;
+		transition: all .3s ease-in-out;
+		@media(max-width: $lg) {
+		  font-size: 60px;
+		}
+		@media(max-width: $md) {
+		  font-size: 48px;
+		}
+		@media(max-width: $sm) {
+		  font-size: 42px;
+		}
+	  }
+	}
+	
+	.counter-box:hover {
+	  .title-counter {
+		color: var(--primary-color);
+	  }
+	  
+	  .prop-obj {
+		color: var(--primary-color);
+	  }
+	}
+	
+	.counter-box:not(:last-child):after {
+	  background-color: var(--default-border);
+	  content: ' ';
+	  height: 30%;
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	  width: 1px;
+	  @media(max-width: $sm) {
+		display: none;
+	  }
+	}
+	
+	.counter-box:not(:last-child):before {
+	  background-color: var(--default-border);
+	  bottom: 0;
+	  content: ' ';
+	  height: 30%;
+	  position: absolute;
+	  right: 0;
+	  width: 1px;
+	  @media(max-width: $sm) {
+		display: none;
+	  }
+	}
+	
+	.counter-box:last-child {
+	  @media(max-width: $sm) {
+		border-bottom: none;
+	  }
+	}
+  }
+}
+
+// Counters type 3
+.counters-section-type-3 {
+  .counters-wrapper {
+	justify-content: center;
+	
+	.counter-box {
+	  padding: 0;
+	  
+	  .content {
+		padding: 120px 30px;
+		position: relative;
+		width: 100%;
+		z-index: 10;
+		@media(max-width: $xl) {
+		  padding: 80px 15px;
+		}
+		@media(max-width: $md) {
+		  flex-direction: column;
+		  padding: 50px 15px;
+		}
+		
+		.prop-obj {
+		  color: var(--primary-color);
+		  font-family: var(--secondary-font);
+		  font-size: 40px;
+		  font-weight: 600;
+		  letter-spacing: 1px;
+		  line-height: 1;
+		  width: 90px;
+		  @media(max-width: $xl) {
+			font-size: 32px;
+			width: 80px;
+		  }
+		  @media(max-width: $md) {
+			margin-bottom: 10px;
+			width: auto;
+		  }
+		}
+		
+		.title-counter {
+		  color: $white;
+		  font-size: 14px;
+		  font-weight: 500;
+		  line-height: 1;
+		  text-align: center;
+		  transition: all .3s ease-in-out;
+		  @media(max-width: $xl) {
+			font-size: 13px;
+		  }
+		  @media(max-width: $sm) {
+			font-size: 12px;
+		  }
+		}
+	  }
+	}
+  }
+}

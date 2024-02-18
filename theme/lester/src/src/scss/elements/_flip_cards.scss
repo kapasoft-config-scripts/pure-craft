@@ -1,0 +1,69 @@
+// Flip container
+.flip-container {
+  perspective: 800px;
+  
+  .img-wrapper {
+	border-radius: 5px;
+	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+	height: 100%;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: all .5s ease-in-out;
+	
+	.side {
+	  backface-visibility: hidden;
+	  left: 0;
+	  position: absolute;
+	  top: 0;
+	}
+	
+	.front {
+	  border-radius: 5px;
+	  overflow: hidden;
+	  transform: rotateX(0deg);
+	  z-index: 2;
+	}
+	
+	.back {
+	  background-color: var(--black-color);
+	  border-radius: 5px;
+	  height: 100%;
+	  transform: rotateX(180deg);
+	  width: 100%;
+	  
+	  .content-wrapper {
+		height: 100%;
+		padding: 25px 40px;
+		@media(max-width: $sm) {
+		  padding: 15px 20px;
+		}
+		
+		h4 {
+		  color: $white;
+		  font-weight: 600;
+		  line-height: 1;
+		  margin-bottom: 10px;
+		  text-align: center;
+		  @media(max-width: $md) {
+			font-size: 20px;
+		  }
+		  @media(max-width: $sm) {
+			font-size: 18px;
+			margin-bottom: 5px;
+		  }
+		}
+		
+		p {
+		  color: rgba($white, 0.9);
+		  text-align: center;
+		}
+	  }
+	}
+  }
+}
+
+.flip-container:hover {
+  .img-wrapper {
+	transform: rotateX(180deg);
+  }
+}

@@ -1,0 +1,56 @@
+// Social icons type 1
+.social-type-1 {
+  .social-box {
+	align-items: center;
+	border-radius: 0;
+	color: $white;
+	display: flex;
+	height: 31px;
+	justify-content: center;
+	margin: 5px;
+	transition: all .2s ease-in-out;
+	width: 31px;
+  }
+  
+  .social-box:hover {
+	border-radius: 100%;
+  }
+}
+
+// Social icons type 2
+.social-type-2 {
+  .social-box {
+	align-items: center;
+	border-radius: 100%;
+	color: $white;
+	display: flex;
+	height: 50px;
+	justify-content: center;
+	margin: 5px;
+	transition: all .2s ease-in-out;
+	width: 50px;
+  }
+  
+  .social-box:hover {
+	transform: scale(1.1);
+  }
+}
+
+// Social icons type 3
+.social-type-3 {
+  .social-box {
+	align-items: center;
+	border-radius: 100%;
+	color: $white;
+	display: flex;
+	height: 40px;
+	justify-content: center;
+	margin: 5px;
+	transition: all .2s ease-in-out;
+	width: 40px;
+  }
+  
+  .social-box:hover {
+	background-color: transparent;
+  }
+}

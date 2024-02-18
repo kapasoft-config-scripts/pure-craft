@@ -1,0 +1,32 @@
+.modal-video-box {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+  
+  iframe {
+	height: 450px;
+	width: 800px;
+	@media(max-width: $lg) {
+	  height: 400px;
+	  width: 710px;
+	}
+	@media(max-width: $md) {
+	  height: 280px;
+	  width: 500px;
+	}
+	@media(max-width: $sm) {
+	  height: 300px;
+	  width: 100%;
+	}
+  }
+  
+  .mfp-close {
+	display: block;
+	margin-top: 10px;
+	position: absolute;
+	right: 0;
+	top: 0;
+  }
+}

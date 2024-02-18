@@ -1,0 +1,31 @@
+// Table type 1
+.table-type-1 {
+  width: 100%;
+  
+  tr {
+	border-bottom: 1px solid var(--default-border);
+	border-top: 1px solid var(--default-border);
+	
+	td {
+	  color: var(--black-color);
+	  font-weight: 500;
+	  padding: 15px 25px;
+	}
+  }
+}
+
+// Table type 2
+.table-type-2 {
+  width: 100%;
+  
+  tr {
+	border-bottom: 1px solid rgba($white, 0.2);
+	border-top: 1px solid rgba($white, 0.2);
+	
+	td {
+	  color: $white;
+	  font-weight: 500;
+	  padding: 15px 25px;
+	}
+  }
+}
